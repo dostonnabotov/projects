@@ -1,0 +1,4 @@
+.primary-header {
+  min-height: 10vh;
+  padding-block: var(--size-fluid-5);
+}

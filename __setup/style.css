@@ -1,7 +1,7 @@
 @import "https://unpkg.com/open-props";
 
 :root {
-  --wrapper-max-width: 50rem;
+  --wrapper-max-width: 70rem;
 
   --clr-primary: var(--blue-8);
 
@@ -10,6 +10,8 @@
   --clr-neutral-300: var(--gray-6);
   --clr-neutral-400: var(--gray-8);
   --clr-neutral-500: var(--gray-10);
+
+  --transition: 250ms ease-in-out;
 }
 
 /*------------------------------------*\
@@ -93,7 +95,6 @@ select {
 \*------------------------------------*/
 body {
   font-family: var(--font-sans);
-  height: 200vh;
 }
 
 p:not([class]),
@@ -153,4 +154,29 @@ svg {
 
 .text-center {
   text-align: center;
+}
+
+/*------------------------------------*\
+  #COMPONENTS
+\*------------------------------------*/
+/**
+ * Title (for <h1> heading)
+ */
+.title {
+  font-size: var(--font-size-6);
+  text-transform: capitalize;
+  position: relative;
+  width: fit-content;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 -30% 0;
+  height: 4px;
+  width: min(70%, 100px);
+  background-color: var(--clr-primary);
+  margin-inline: auto;
 }
