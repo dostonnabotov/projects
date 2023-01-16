@@ -17,7 +17,6 @@ function App() {
       const articles = await res.json();
       setLoading(false);
       setArticles(articles);
-      console.log(articles);
     } catch (error) {
       setLoading(false);
       console.log(error);

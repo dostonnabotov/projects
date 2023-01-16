@@ -10,7 +10,9 @@ Welcome to the blog project. This project uses DEV.to API to fetch the latest po
 
 ## Overview
 
-- [Live Site](https://blog-eta.vercel.app/)
+<!-- TODO: Upload to Netlify -->
+<!-- - [Live Site]() -->
+
 - [Live API](https://dev.to/api/articles?username=dostonnabotov)
 
 Built with:
@@ -33,12 +35,22 @@ Tools:
 - How to fetch data from API using `fetch()` and `useEffect()` hooks
 
 ```js
+const fetchArticles = async () => {
+  setLoading(true);
+
+  try {
+    const res = await fetch(url);
+    const articles = await res.json();
+    setLoading(false);
+    setArticles(articles);
+  } catch (error) {
+    setLoading(false);
+    console.log(error);
+  }
+};
+
 useEffect(() => {
-  fetch("https://dev.to/api/articles?username=dostonnabotov")
-    .then((res) => res.json())
-    .then((data) => {
-      setArticles(data);
-    });
+  fetchArticles();
 }, []);
 ```
 
