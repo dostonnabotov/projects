@@ -1,0 +1,156 @@
+@import "https://unpkg.com/open-props";
+
+:root {
+  --wrapper-max-width: 50rem;
+
+  --clr-primary: var(--blue-8);
+
+  --clr-neutral-100: var(--gray-0);
+  --clr-neutral-200: var(--gray-3);
+  --clr-neutral-300: var(--gray-6);
+  --clr-neutral-400: var(--gray-8);
+  --clr-neutral-500: var(--gray-10);
+}
+
+/*------------------------------------*\
+  #RESET
+\*------------------------------------*/
+/**
+ * @see https://piccalil.li/blog/a-modern-css-reset/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*------------------------------------*\
+  #GLOBAL
+\*------------------------------------*/
+body {
+  font-family: var(--font-sans);
+  height: 200vh;
+}
+
+p:not([class]),
+li:not([class]),
+blockquote:not([class]) {
+  max-width: 60ch;
+}
+
+svg {
+  height: 3ex;
+  width: auto;
+  flex: none;
+}
+
+::selection {
+  background-color: var(--clr-neutral-400);
+  color: var(--clr-neutral-100);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--clr-neutral-200);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--clr-neutral-400);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-primary);
+}
+
+/*------------------------------------*\
+  #UTILITIES
+\*------------------------------------*/
+.wrapper {
+  width: min(100% - 2rem, var(--wrapper-max-width));
+  margin-inline: auto;
+}
+
+.flow > *:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, var(--size-3));
+}
+
+.flex {
+  display: flex;
+  gap: var(--size-3);
+}
+
+.grid {
+  display: grid;
+  gap: var(--size-3);
+}
+
+.text-center {
+  text-align: center;
+}
