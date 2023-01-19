@@ -163,20 +163,21 @@ svg {
  * Title (for <h1> heading)
  */
 .title {
-  font-size: var(--font-size-6);
-  text-transform: capitalize;
   position: relative;
   width: fit-content;
-  text-align: center;
   margin-inline: auto;
+
+  font-size: var(--font-size-6);
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .title::after {
   content: "";
   position: absolute;
   inset: auto 0 -30% 0;
-  height: 4px;
   width: min(70%, 100px);
-  background-color: var(--clr-primary);
+  height: 4px;
   margin-inline: auto;
+  background-color: var(--clr-primary);
 }
