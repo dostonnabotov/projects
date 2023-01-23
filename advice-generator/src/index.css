@@ -1,1 +1,15 @@
 @import "../../__setup/style.css";
+
+:root {
+  --loading-spinner-size: 1rem;
+  --loading-spinner-gap: 1;
+  --loading-spinner-wrapper: calc(
+    var(--loading-spinner-size) * 3 + var(--loading-spinner-gap) *
+      var(--loading-spinner-size) * 2
+  );
+  --loading-spinner-color: #222;
+
+  --loading-animation-timing: cubic-bezier(0, 1, 1, 0);
+  --loading-animation-duration: 600ms;
+  --loading-animation-count: infinite;
+}

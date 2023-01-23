@@ -1,4 +1,8 @@
-@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/sizes.min.css";
+@import "https://unpkg.com/open-props/fonts.min.css";
+@import "https://unpkg.com/open-props/colors.min.css";
+@import "https://unpkg.com/open-props/borders.min.css";
+@import "https://unpkg.com/open-props/shadows.min.css";
 
 :root {
   --wrapper-max-width: 70rem;

@@ -1,9 +1,12 @@
 import "./App.css";
+import Header from "./components/Header/Header";
+import Loading from "./components/Loading/Loading";
 
 function App() {
   return (
     <>
-      <h1>Hello, World!</h1>
+      <Header />
+      <Loading />
     </>
   );
 }
