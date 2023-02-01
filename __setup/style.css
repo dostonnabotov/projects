@@ -185,3 +185,30 @@ svg {
   margin-inline: auto;
   background-color: var(--clr-primary);
 }
+
+/**
+ * Button
+ */
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+
+  min-width: 12ch;
+  border: 1px solid inherit;
+  border-radius: var(--radius-2);
+
+  background-color: transparent;
+  padding: 0 1em;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 2.25em;
+  text-transform: uppercase;
+  letter-spacing: 0.1ch;
+  text-decoration: none;
+
+  transition: 100ms ease;
+  cursor: pointer;
+}
