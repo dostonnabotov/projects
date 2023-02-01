@@ -1,4 +1,5 @@
 .loading {
+  display: block;
   --spacer: calc(
     var(--loading-spinner-size) * var(--loading-spinner-gap) +
       var(--loading-spinner-size)
@@ -7,6 +8,7 @@
   width: var(--loading-spinner-wrapper);
   height: var(--loading-spinner-size);
   margin-inline: auto;
+  margin-block: var(--size-4);
   /* border: 1px solid red;s */
 }
 
