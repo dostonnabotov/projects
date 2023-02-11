@@ -7,4 +7,5 @@ Built with [Vite](https://vitejs.dev/).
 ## Resources
 
 [React Router](https://reactrouter.com/en/main)
-[Web Dev Simplified - React](https://youtu.be/SLfhMt5OUPI)
+[Web Dev Simplified - React (2)](https://youtu.be/Ul3y1LXxzdU)
+[Web Dev Simplified - React (1)](https://youtu.be/SLfhMt5OUPI)
