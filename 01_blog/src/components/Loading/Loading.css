@@ -1,9 +1,0 @@
-.loading {
-  display: grid;
-  place-items: center;
-  min-height: 10vh;
-}
-
-.loading__title {
-  font-size: var(--font-size-fluid-2);
-}

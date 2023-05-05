@@ -1,6 +1,0 @@
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: var(--size-6);
-  margin-block: var(--size-fluid-4);
-}
